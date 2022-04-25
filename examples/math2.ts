@@ -1,10 +1,10 @@
 import { ASTKinds, ATOM, FAC, INT, parse, ParseResult, SUM } from '../grammer/math2'
 
-const result: ParseResult = parse('  1 * 2 + 3 * 4  ');
+const result: ParseResult = parse('  1 * 2 + 3 * ( 3 + 1 )  ');
 
 if (result.ast) {
   console.log(result.ast);
-  console.log(calcSum(result.ast));
+  console.log(calcSum(result.ast.sum));
 }
 
 if (result.errs) {

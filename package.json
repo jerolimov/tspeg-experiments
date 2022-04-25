@@ -6,7 +6,9 @@
     "tsc": "tsc",
     "tspeg": "tspeg",
     "build-helloworld": "tspeg grammer/helloworld.peg grammer/helloworld.ts && tsc -t ES2015 -m commonjs grammer/helloworld.ts && tsc -t ES2015 -m commonjs examples/helloworld.ts",
-    "run-helloworld": "npm run build-helloworld && node examples/helloworld.js Hello World"
+    "run-helloworld": "npm run build-helloworld && node examples/helloworld.js Hello World",
+    "build-math": "tspeg grammer/math.peg grammer/math.ts && tsc -t ES2015 -m commonjs grammer/math.ts && tsc -t ES2015 -m commonjs examples/math.ts",
+    "run-math": "npm run build-math && node examples/math.js"
   },
   "devDependencies": {
     "@types/node": "^17.0.27",

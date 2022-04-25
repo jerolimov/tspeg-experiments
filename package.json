@@ -8,7 +8,9 @@
     "build-helloworld": "tspeg grammer/helloworld.peg grammer/helloworld.ts && tsc -t ES2015 -m commonjs grammer/helloworld.ts && tsc -t ES2015 -m commonjs examples/helloworld.ts",
     "run-helloworld": "npm run build-helloworld && node examples/helloworld.js Hello World",
     "build-math": "tspeg grammer/math.peg grammer/math.ts && tsc -t ES2015 -m commonjs grammer/math.ts && tsc -t ES2015 -m commonjs examples/math.ts",
-    "run-math": "npm run build-math && node examples/math.js"
+    "run-math": "npm run build-math && node examples/math.js",
+    "build-math2": "tspeg grammer/math2.peg grammer/math2.ts && tsc -t ES2015 -m commonjs grammer/math2.ts && tsc -t ES2015 -m commonjs examples/math2.ts",
+    "run-math2": "npm run build-math2 && node examples/math2.js"
   },
   "devDependencies": {
     "@types/node": "^17.0.27",
